@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Головна</title>
+</head>
+
+<body>
+  
+  <div id="snowfall"></div>
+
+<!-- Модальное окно -->
+<div class="modal" id="discountModal">
+  <div class="modal-content">
+    <span class="close" id="closeDiscountButton">&times;</span>
+    <h2 style="color: rgb(255, 255, 255);">Новорічні знижки -50%</h2>
+    <p style="color: rgb(255, 255, 255); text-align: center;">Спробуйте один із нових новорічних коктейлів та отримайте
+      знижку на наступний -50%</p>
+  </div>
+</div>
+
+  <header class="p-3 bg-dark-custom text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"></a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">Головна</a></li>
+          <li><a href="#" class="nav-link px-2 hover_white ">Меню</a></li>
+          <li><a href="#" class="nav-link px-2 hover_white">Залишити відгук</a></li>
+        </ul>
+
+        <button class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" id="discountButton" type="button" class="btn btn-primary">Показати знижку</button>
+
+        <div class="text-end">
+          <a href="#" id="loginButton"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+          <a href="index.html"><button type="button" class="btn btn-warning">Sign-up</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="first_photo"><img src="img/11.jpeg" alt="photo"></div>
+
+    <div class="box_information1">
+      <div class="information1">
+        <div class="Adress">Адреса:</div>
+        <div class="Arkadia_alei">Аркадійська алея, 1, Odesa, Odessa Oblast,</div>
+        Ukraine, 65000 <br>
+        <div class="OnMapAndPhone">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 0C15.791 0 14 1.791 14 4C14 6.857 18 11 18 
+              11C18 11 22 6.857 22 4C22 1.791 20.209 0 18 0ZM18 
+              2.57031C18.789 2.57031 19.4297 3.211 19.4297 4C19.4297 
+              4.789 18.789 5.42969 18 5.42969C17.211 5.42969 16.5703 
+              4.789 16.5703 4C16.5703 3.211 17.211 2.57031 18 2.57031ZM8.96875 
+              2.93555L3.62891 5.07227C3.24891 5.22427 3 5.591 3 6V20C3 
+              20.707 3.71409 21.1917 4.37109 20.9297L9.03125 19.0645L15.0312 
+              21.0645L20.3711 18.9297C20.7511 18.7767 21 18.409 21 
+              18V10.5859C20.308 11.4659 19.6965 12.1226 19.4375 12.3906L19 
+              12.8438V17.3242L16 18.5234V11.7812C15.471 11.1873 14.716 
+              10.2848 14 9.21484V18.6133L10 17.2812V5.38672L12.4277 
+              6.19531C12.1657 5.46031 12 4.718 12 4C12 3.982 12.0039 
+              3.96527 12.0039 3.94727L8.96875 2.93555ZM8 5.47656V17.3223L5 
+              18.5234V6.67773L8 5.47656Z" fill="#d47602"></path>
+          </svg>
+          Подивитись на карті
+        </div>
+      </div>
+      <div class="information2">
+        <div class="Phone">Телефон:</div>
+        <div class="Phone_number">093 787 8785</div>
+        <div class="OnMapAndPhone">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.9883 2.00294C13.8776 2.00954 13.7655 2.02788 13.6543 
+              2.05763L5.5957 4.21779C4.7057 4.45679 4.17897 5.37076 4.41797 
+              6.26076L8.30273 20.7647C8.54073 21.6547 9.4557 22.1824 10.3457 
+              21.9443L18.4023 19.7842C19.2923 19.5462 19.82 18.6312 19.582 
+              17.7412L15.6973 3.23732C15.489 2.45857 14.7629 1.95673 13.9883 
+              2.00294ZM14.5176 5.28029L17.5391 16.5615L9.48242 18.7217L6.46094 
+              7.44044L14.5176 5.28029ZM20.75 5.33888L18.8184 5.85646L20.9766 
+              13.9151L22.9082 13.3975L20.75 5.33888ZM3.02344 10.0889L1.0918 
+              10.6065L3.25 18.6631L5.18164 18.1455L3.02344 10.0889Z" fill="#d47602"></path>
+          </svg>
+          Зателефонувати
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Ми рекомендуємо</h2>
+
+    <div class="box_recomendation">
+      <div class="width_980">
+        <div class="photo color_hover"><img src="img/7.jpeg" alt="">
+          <div class="price">375 UAH</div>
+          <div>SPICY SHRIMP</div>
+          <div>BURGER</div>
+        </div>
+        <div class="photo color_hover"><img src="img/8.jpeg" alt="">
+          <div class="price">319 UAH</div>
+          <div>Салат з ростбіфом</div>
+        </div>
+      </div>
+      <div class="width_980">
+        <div class="photo color_hover"><img src="img/9.jpeg" alt="">
+          <div class="price">299 UAH</div>
+          <div>BANG BANG</div>
+        </div>
+        <div class="photo color_hover"><img src="img/10.jpeg" alt="">
+          <div class="price">333 UAH</div>
+          <div>THE ROASTERY</div>
+          <div>BURGER</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="view_menu">
+      <div class="all_products">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill="white" transform="translate(5, 2)" d="M0 0v6c0 1.65 1.35 3 3 3v11h2V9c1.65 0 3-1.35 3-3V0H6v5c0 
+            .3-.2.5-.5.5S5 5.3 5 5V0H3v5c0 .3-.2.5-.5.5S2 5.3 2 5V0H0zm10 
+            0v20h2v-7h2V9c0-2.2 0-6-3-9h-1z">
+          </path>
+        </svg>
+        Переглянути все меню</div>
+    </div>
+
+    <h4>Простір культури, музики та стилю</h4>
+    <h2>Галерея</h2>
+
+    <div class="box_all_photo">
+      <div class="box_photo_eat">
+        <div class="widht_980_ph">
+          <img src="img/1.jpeg" alt="photo">
+          <img src="img/2.jpeg" alt="photo">
+        </div>
+        <div class="widht_980_ph">
+          <img src="img/3.jpeg" alt="photo">
+          <img src="img/4.jpeg" alt="photo">
+        </div>
+      </div>
+
+      <div class="box_photo_eat" style="margin-top: 10px;">
+        <div class="widht_980_ph">
+          <img src="img/5.jpeg" alt="photo">
+          <img src="img/6.jpeg" alt="photo">
+        </div>
+        <div class="widht_980_ph">
+          <img src="img/12.jpeg" alt="photo">
+          <img src="img/13.jpeg" alt="photo">
+        </div>
+      </div>
+    </div>
+
+    <div class="push">.</div>
+
+  </main>
+
+
+
+  <div class="container footer">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 hover_white">Контакти</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 hover_white">Відгуки</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 hover_white">Instagram</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 hover_white">Facebook</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 hover_white">Інше</a></li>
+      </ul>
+      <p class="text-center"><a href="#" class="nav-link px-2 hover_white">© 2023 The Roastery by Odesa</a>
+      </p>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+body {
+  background-color: #090909;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-warning {
+  background-color: #d47602;
+  border-color: #d47602;
+  color: white;
+}
+
+.bg-dark-custom {
+  background-color: #222222bd;
+}
+
+.content h1 {
+  font-size: 2em;
+  color: white;
+}
+
+.content p {
+  font-size: 1.2em;
+  color: #cacaca;
+}
+
+main {
+  color: white;
+  width: 1300px;
+  margin: 0 auto 0 auto;
+  margin-top: 30px;
+  background-color: #222222bd;
+  border-radius: 15px;
+}
+
+.first_photo img {
+  width: 1300px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.Adress,
+.Phone,
+.price {
+  margin-bottom: 5px;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.box_information1 {
+  padding: 30px 30px 10px 30px;
+  display: flex;
+}
+
+.Arkadia_alei,
+.Phone_number {
+  font-size: 22px;
+}
+
+.OnMapAndPhone {
+  color: #d47602;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.information1 {
+  margin-right: 100px;
+}
+
+h2 {
+  text-align: center;
+  padding: 30px;
+}
+
+.photo {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.photo:hover {
+  overflow: hidden;
+}
+
+.photo img {
+  width: 230px;
+  border-radius: 10px;
+}
+
+.photo img:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+}
+
+.box_recomendation {
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+}
+
+.price {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.view_menu {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.all_products {
+  border: 1px solid rgb(121, 121, 121);
+  padding: 12px 18px 12px 18px;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.all_products:hover {
+  border-color: rgb(212, 118, 2);
+}
+
+h4 {
+  margin-top: 40px;
+  margin-left: 20%;
+}
+
+.box_photo_eat {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.box_photo_eat img {
+  width: 300px;
+}
+
+.box_all_photo {
+  width: fit-content;
+  margin-left: 35px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.push {
+  color: rgb(27, 27, 27);
+  margin-top: 15px;
+}
+
+.color_hover {
+  transition: color 0.3s ease;
+}
+
+.color_hover .price:hover {
+  opacity: 1;
+  color: rgb(212, 118, 2);
+}
+
+.color_hover:hover {
+  color: rgb(212, 118, 2);
+}
+
+.hover_white {
+  color: rgb(140, 140, 140);
+}
+
+.hover_white:hover {
+  color: rgb(228, 228, 228);
+}
+
+.width_980 {
+  display: flex;
+  gap: 40px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  main {
+    width: 1100px;
+  }
+
+  .first_photo img {
+    width: 1100px;
+  }
+
+  .box_recomendation {
+    gap: 30px;
+  }
+
+  .box_photo_eat img {
+    width: 250px;
+  }
+
+  .width_980 {
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  main {
+    width: 900px;
+  }
+
+  .first_photo img {
+    width: 900px;
+  }
+
+  .box_recomendation {
+    gap: 10px;
+  }
+
+  .width_980 {
+    gap: 10px;
+  }
+
+  .box_photo_eat img {
+    width: 200px;
+  }
+
+  .photo img {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 980px) {
+  main {
+    width: 100vw;
+  }
+
+  .first_photo img {
+    width: 100vw;
+  }
+
+  .box_recomendation {
+    gap: 20px;
+  }
+
+  .width_980 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box_photo_eat img {
+    width: 45vw;
+  }
+
+  .photo img {
+    width: 40vw;
+  }
+
+  .photo {
+    font-size: 24px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .widht_980_ph {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .box_photo_eat img {
+    width: 43vw;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #1a1a1a;
+  margin: 5% auto;
+  padding: 20px;
+  border: 3px solid #d47602;
+  width: 70%;
+  height: 23%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  color: #868686;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #d47602;
+  text-decoration: none;
+}
+
+#discountButton {
+  background-color: #d47602;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#discountButton:hover {
+  background-color: #c26f0a;
+}
+
+#snowfall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.snowflake {
+  position: fixed;
+  color: #fff;
+  user-select: none;
+  pointer-events: none;
+  font-family: 'Arial, sans-serif';
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+}
