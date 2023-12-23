@@ -125,16 +125,22 @@
     </div>
 
     <div class="view_menu">
-      <div class="all_products">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
+      <div class="all_products" onclick="showModal()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill="white" transform="translate(5, 2)" d="M0 0v6c0 1.65 1.35 3 3 3v11h2V9c1.65 0 3-1.35 3-3V0H6v5c0 
             .3-.2.5-.5.5S5 5.3 5 5V0H3v5c0 .3-.2.5-.5.5S2 5.3 2 5V0H0zm10 
             0v20h2v-7h2V9c0-2.2 0-6-3-9h-1z">
           </path>
         </svg>
-        Переглянути все меню</div>
+        Переглянути все меню
+      </div>
+
+    <div id="modal">
+      <p>На жаль, меню зараз знаходиться на редакції...</p>
+      <button onclick="hideModal()">Закрыть</button>
     </div>
+  </div>
+  
 
     <h4>Простір культури, музики та стилю</h4>
     <h2>Галерея</h2>
@@ -166,8 +172,6 @@
     <div class="push">.</div>
 
   </main>
-
-
 
   <div class="container footer">
     <footer class="py-3 my-4">

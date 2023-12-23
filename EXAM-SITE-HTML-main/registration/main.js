@@ -54,4 +54,14 @@ document.addEventListener("DOMContentLoaded", function () {
         createSnowfall();
       });
       
+//модальное окно 2
+function showModal() {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'block';
+  }
+
+  function hideModal() {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'none';
+  }
   
