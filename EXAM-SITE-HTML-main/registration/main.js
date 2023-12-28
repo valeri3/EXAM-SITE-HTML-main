@@ -29,11 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
         function createSnowflake() {
           const snowflake = document.createElement("div");
           snowflake.className = "snowflake";
-          const size = Math.random() * 10 + 5 + "px"; // Увеличьте размер снежинок
+          const size = Math.random() * 10 + 5 + "px"; 
           snowflake.style.width = size;
           snowflake.style.height = size;
           snowflake.style.left = Math.random() * window.innerWidth + "px";
-          snowflake.style.top = Math.random() * window.innerHeight + "px"; // Изменено значение top
+          snowflake.style.top = Math.random() * window.innerHeight + "px"; 
           snowflake.style.animationDuration = Math.random() * 3 + 2 + "s";
           snowflake.style.opacity = Math.random();
           snowflake.style.animationTimingFunction = "ease-in-out";
